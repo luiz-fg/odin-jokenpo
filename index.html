@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Jokenpo</title>
+</head>
+<body>
+<div class="instructions">
+    <p>escape: stop game</p>
+    <p>enter: start game</p>
+    <p>r: rock</p>
+    <p>s: scissor</p>
+    <p>p: paper</p>
+</div>
+    <div class="container">
+        <div class="options">
+            <button id="btnStart">Start</button>
+            <button id="btnStop">stop</button>
+        </div>
+            <ul class="scores">
+                <li>You: <span class="humanScore"></span> </li>
+                <li>Computer: <span class="computerScore"></span> </li>
+            </ul>
+
+            <ul class="choices">
+                <li class="humanChoice"></li>
+                <li class="computerChoice"></li>
+                <li class="winner"></li>
+            </ul>
+
+        <ul class="hands">
+            <li data-hand="rock" class="rock"><img src="./img/rock.svg" alt="closed hand like a rock"></li>
+            <li data-hand="paper" class="paper"><img src="./img/paper.svg" alt="open hand like a paper"></li>
+            <li data-hand="scissor" class="scissor"><img src="./img/scissor.svg" alt="showing two finger like a scissor"></li>
+        </ul>
+    </div>
+
+    <div class="really">
+        <p>no more games</p>
+    </div>
+    
+</body>
+</html>
